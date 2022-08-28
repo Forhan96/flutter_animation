@@ -17,7 +17,7 @@ class _FadeState extends State<Fade> with SingleTickerProviderStateMixin {
   void initState() {
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: Duration(seconds: 3),
     );
     if (widget.fadeIn) {
       _animation = Tween(begin: 0.0, end: 1.0).animate(_animationController);
